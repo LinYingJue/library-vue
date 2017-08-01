@@ -1,6 +1,6 @@
 <template>
   <div>
-    <img class="menu-icon" src="../assets/image/menu_icon.png"></img>
+    <img class="menu-icon" src="../assets/image/menu_icon.png" v-on:click="showMenu()"></img>
     <p>
       <img class="search-icon" src="../assets/image/search_icon.png"></img>
       <input type="text"></input>
@@ -14,6 +14,11 @@ export default {
   data () {
     return {
       msg: 'Welcome to searchbar'
+    }
+  },
+  methods: {
+    showMenu: function () {
+      this.$emit('toggleMenu')
     }
   }
 }

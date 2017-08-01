@@ -9,20 +9,20 @@
       </li>
       <li>
         <div class="minor-menu-item">
-          <img src="../assets/image/all_icon.png"></img>
-          <p>所有</p>
+          <img src="../assets/image/rank_icon.png"></img>
+          <p>排行</p>
         </div>
       </li>
       <li>
         <div class="minor-menu-item">
-          <img src="../assets/image/all_icon.png"></img>
-          <p>所有</p>
+          <img src="../assets/image/borrow_icon.png"></img>
+          <p>借阅</p>
         </div>
       </li>
       <li>
         <div class="minor-menu-item">
-          <img src="../assets/image/all_icon.png"></img>
-          <p>所有</p>
+          <img src="../assets/image/exchange_icon.png"></img>
+          <p>圈子</p>
         </div>
       </li>
     </ul>
@@ -62,6 +62,7 @@ export default {
     p{
       color: #565656;
       font-size: $normalFontSize;
+      margin: 0;
     }
   }
 }
