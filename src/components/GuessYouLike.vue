@@ -2,22 +2,22 @@
   <div>
     <p class="title">猜你喜欢</p>
     <ul>
-      <li>
+      <li v-on:click="showBookDetail()">
         <p class="owner">坑逼</p>
         <img src="../assets/image/book_sample.png"></img>
         <p class="book-name">Java指南</p>
       </li>
-      <li>
+      <li v-on:click="showBookDetail()">
         <p class="owner">坑逼</p>
         <img src="../assets/image/book_sample_1.png"></img>
         <p class="book-name">Java指南</p>
       </li>
-      <li>
+      <li v-on:click="showBookDetail()">
         <p class="owner">坑逼</p>
         <img src="../assets/image/book_sample.png"></img>
         <p class="book-name">Java指南</p>
       </li>
-      <li>
+      <li v-on:click="showBookDetail()">
         <p class="owner">坑逼</p>
         <img src="../assets/image/book_sample_1.png"></img>
         <p class="book-name">Java指南</p>
@@ -28,7 +28,12 @@
 
 <script>
 export default {
-  name: 'guessyoulike'
+  name: 'guessyoulike',
+  methods: {
+    showBookDetail: function () {
+      this.$router.push('/detail')
+    }
+  }
 }
 </script>
 
